@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/saxena-swati/CICD-demo.git'
+                git branch: 'main', git 'https://github.com/saxena-swati/CICD-demo.git'
             }
         }
         stage('Build') {
